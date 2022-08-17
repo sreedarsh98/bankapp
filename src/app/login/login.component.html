@@ -1,0 +1,28 @@
+<!--><h1>{{head}}{{bank}}</h1> <!--string binding eg-->
+
+<div class="row">
+  
+  <div class="col-lg-4 mx-auto" style="margin-top:100px;">
+
+    <h2 class="text-center">Login Form</h2>
+    <form action="" class="border" m-5 p-5>
+
+      <div class="m-3">
+        <input (change)="acnochange($event)" class="form-control" placeholder="accnoplease" type="text" >  <!--propery binding eg-->
+      </div>
+
+      <div class="m-3">
+        <input (change)="pswdchange($event)"  placeholder="enter password" class="form-control" type="password">
+      </div>
+
+      <div class="m-3">
+        <input (click)="log()" class="btn btn-primary" type="button" id="loginBtn" value="login"> <!--event binding-->
+      </div>
+    </form>
+  </div>
+  <div class="text-center">
+    <label for="">not a user? click here to <a href="">register</a></label>
+  </div>
+ 
+
+</div>
